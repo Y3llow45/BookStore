@@ -6,7 +6,7 @@ function Header() {
   return (
     <header className="header">
       <div className="header-logo">
-        <NavLink to="/">BookStore</NavLink>
+        <NavLink to="/" className="navlink logo">Book Store</NavLink>
       </div>
       <nav className="header-nav">
         <div className="dropdown">
@@ -15,7 +15,6 @@ function Header() {
             <NavLink to="/category/fiction">Fiction</NavLink>
             <NavLink to="/category/non-fiction">Non-Fiction</NavLink>
             <NavLink to="/category/science">Science</NavLink>
-            {/* Add more categories here */}
           </div>
         </div>
         <div className="dropdown">
@@ -23,7 +22,6 @@ function Header() {
           <div className="dropdown-content">
             <NavLink to="/authors/author1">Author 1</NavLink>
             <NavLink to="/authors/author2">Author 2</NavLink>
-            {/* Add more authors here */}
           </div>
         </div>
         <div className="dropdown">
@@ -31,12 +29,11 @@ function Header() {
           <div className="dropdown-content">
             <NavLink to="/genres/genre1">Genre 1</NavLink>
             <NavLink to="/genres/genre2">Genre 2</NavLink>
-            {/* Add more genres here */}
           </div>
         </div>
       </nav>
       <div className="header-signin">
-        <NavLink to="/signin">Sign In</NavLink>
+        <NavLink to="/signin" className="navlink">Sign In</NavLink>
       </div>
     </header>
   );
